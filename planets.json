@@ -1,0 +1,34 @@
+{
+    "1": {
+        "image": "./resources/planets/enceladus.png",
+        "name":"enceladus",
+        "location": "The Saturn System",
+        "distance": "9.5",
+        "aupopulation": "3920",
+        "price": "999.990",
+        "ticket_type": "one way ticket",
+        "description": "is the sixth-largest moon of Saturn. It is about a tenth of Saturn's largest moon, Titan."
+    },
+
+    "2": {
+        "image": "./resources/planets/moon.jpg",
+        "name":"moon",
+        "location": "Earth's Moon",
+        "distance": "1",
+        "aupopulation": "43224",
+        "price": "149.990",
+        "ticket_type": "one way ticket",
+        "description": "The Moon is Earth's only natural satellite. Its diameter is about one-quarter the diameter of the Earth."
+    },
+
+    "3": {
+        "image": "./resources/planets/moon.jpg",
+        "name":"moon",
+        "location": "Earth's Moon",
+        "distance": "1",
+        "aupopulation": "43224",
+        "price": "249.990",
+        "ticket_type": "both way ticket",
+        "description": "The Moon is Earth's only natural satellite. Its diameter is about one-quarter the diameter of the Earth."
+    }
+}

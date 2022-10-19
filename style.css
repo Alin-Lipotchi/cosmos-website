@@ -167,7 +167,7 @@ body {
 }
 
 .product .product-card .product-img {
-    background: url(./resources/enceladus.png) no-repeat center center/cover;
+    background: url(./resources/planets/enceladus.png) no-repeat center center/cover;
     border-radius: 5px 0 0 5px;
     height: 100%;
     width: 700px;
