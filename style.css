@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+/* Variables */
+
+:root {
+    --primary-color: #141922;
+    --secondary-color: #A9B5CC;
+    --tertiary-color: #2D333D;
+    --quaternary-color: #272B35;
+    --succes-color: #46C351;
+    --background-color: #1b212b;
+    --border-color: #181D26;
+}
+
+/* Utility Classes */
+
+.fw-1 {
+    font-weight: 300;
+}
+
+.fw-2 {
+    font-weight: 400;
+}
+
+.fw-3 {
+    font-weight: 700;
+}
+
+.btn {
+    color: var(--secondary-color);
+    background: var(--succes-color);
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: ease-in-out all .3s;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Reset */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Main */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+
+body {
+    background: var(--background-color);
+}
+
+.navbar {
+    background: var(--primary-color);
+    height: 60px;
+}
+
+.nav-container {
+    max-width: 1020px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .nav-element {
+    display: flex;
+}
+
+.navbar .nav-element .logo-link {
+     color: var(--secondary-color);
+     font-size: 36px;
+}
+
+.navbar .nav-element .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .nav-element .menu .menu-item {
+    color: var(--secondary-color);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-left: 48px;
+    transition: ease-in-out all .2s;
+} 
+
+.navbar .nav-element .menu .menu-item:hover {
+    color: var(--succes-color);
+}
+
+.navbar .nav-element .menu .menu-item img {
+    height: 20px;
+    width: 20px;
+    margin-right: 4px;
+}
+
+/* Product */
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.product .product-arrow {
+    color: var(--secondary-color);
+    height: 48px;
+    width: 52px;
+    background: var(--quaternary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    transition: ease-in-out all .4s;
+}
+
+.product .product-arrow:hover {
+    background: var(--primary-color);
+}
+
+.product .product-arrow:first-child img {
+    margin-right: 2px;
+    transition: ease-in-out all .4s;
+}
+
+.product .product-arrow:first-child:hover img {
+    transform: translateX(-4px);
+}
+
+.product .product-arrow:last-child img {
+    margin-left: 2px;
+    transition: ease-in-out all .4s;
+}
+
+.product .product-arrow:last-child:hover img {
+    transform: translateX(4px);
+}
+
+.product .product-card {
+    width: 1020px;
+    height: 400px;
+    background: var(--tertiary-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    display: flex;
+}
+
+.product .product-card .product-img {
+    background: url(./resources/enceladus.png) no-repeat center center/cover;
+    border-radius: 5px 0 0 5px;
+    height: 100%;
+    width: 700px;
+    flex-shrink: 0;
+}
+
+.product .product-card .product-img .main-info {
+    padding: 16px;
+}
+
+.product .product-card .product-img .main-info h3, .product .product-card .product-img .main-info p {
+    color: var(--secondary-color);
+    font-size: 16px;
+}
+
+.product .product-card .product-info {
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product .product-card .product-info .product-title {
+    color: var(--secondary-color);
+    font-size: 28px;
+}
+
+.product .product-card .product-info .short-desc-p {
+    margin-top: 16px;
+    color: var(--secondary-color);
+    width: 75%;
+}
+
+.product .product-card .product-info .price-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--quaternary-color);
+    padding: 12px 16px;
+    color: var(--secondary-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-top: auto;
+}
+
+.product .product-card .product-info .price-area .price-text {
+    font-size: 32px;
+    flex-shrink: 0;
+}
+
+.product .product-card .product-info .price-area .secondary-text {
+    font-size: 14px;
+}
+
+/* Steps */
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--secondary-color);
+    max-width: 1020px;
+    margin: 0 auto;
+    margin-top: 72px;
+}
+
+.row .arrow {
+    height: 30px;
+}
+
+.row .col {
+    flex-shrink: 0;
+}
+
+.row .col p {
+    text-align: center;
+    font-size: 24px;
+}
+
+.row .col img {
+    height: 90px;
+}
+
+.row .col:last-child {
+    background: var(--quaternary-color);
+    border: 1px solid var(--border-color);
+    width: 300px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row .col:last-child h2 {
+    font-size: 52px;
+}
+
+.row .col:last-child h3 {
+    font-size: 24px;
+}
+
+/* Description */
+
+.description {
+    max-width: 1020px;
+    margin: 0 auto;
+    margin-top: 72px;
+}
+
+.description .desc-title {
+    color: var(--secondary-color);
+    font-size: 28px;
+}
+
+.description .divider {
+    width: 500px;
+    height: 1px;
+    background: #3A424E;
+    margin-top: 16px;
+    margin-bottom: 36px;
+}
+
+.description p {
+    width: 700px;
+    margin-bottom: 32px;
+    line-height: 24px;
+    word-spacing: 4px;
+    color: var(--secondary-color);
+}
+
+/* Footer */
+
+footer {
+    margin-top: 136px;
+    height: 160px;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+footer .footer-container {
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 36px 0;
+}
+
+footer .footer-container p {
+    font-size: 12px;
+}
+
+footer .footer-container p:last-child {
+    margin-top: 20px;
+    max-width: 350px;
+}
