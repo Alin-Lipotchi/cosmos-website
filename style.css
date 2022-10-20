@@ -445,7 +445,17 @@ footer .footer-container p:last-child {
     }
 
     .product .product-arrow {
-        display: none;
+        position: absolute;
+    }
+    
+    .product .product-arrow:first-child {
+        left: 1%;
+        top: 200px;
+    }
+
+    .product .product-arrow:last-child {
+        right: 1%;
+        top: 200px;
     }
 
     .product .product-card .product-img .main-info {
